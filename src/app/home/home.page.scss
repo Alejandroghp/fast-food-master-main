@@ -1,0 +1,51 @@
+page-home {
+  #map {
+    height: 70vh; /* Ajusta la altura del mapa según tus preferencias */
+    width: 100%;
+  }
+
+  .search-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: calc(100% - 20px);
+
+    input {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .search-results {
+    position: absolute;
+    top: 80px; /* Ajusta la posición según tus preferencias */
+    left: 10px;
+    z-index: 1;
+    width: calc(100% - 20px);
+    max-height: 150px; /* Ajusta la altura máxima según tus preferencias */
+    overflow-y: auto;
+
+    .result {
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .info-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: 300px; /* Ajusta el ancho máximo según tus preferencias */
+  }
+  ion-item {
+    cursor: pointer;
+  }
+}
